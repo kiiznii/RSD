@@ -4,6 +4,7 @@
 This project implements a **basic ADAS control stack** — Adaptive Cruise Control (ACC) and Lane Keeping (LK) — integrated with the **Eclipse SDV ecosystem**.  
 The goal is to create a working pipeline from **simulation (CARLA)** → **data broker (Kuksa with VSS)** → **communication (Zenoh)** → **control logic (ACC + LK)**.
 
+```mermaid
 flowchart LR
   %% === Stage 1: ENV ===
   subgraph ENV["ENV (CARLA Simulation)"]
@@ -36,6 +37,7 @@ flowchart LR
   %% Decision -> Control -> CARLA
   D --> CT
   CT -->|"Throttle / Brake / Steering"| CARLA["CARLA Ego Vehicle"]
+
 
 
 
