@@ -1,5 +1,5 @@
 # Team RSD - Ready Set Drive !
-![캡처](file:///home/gihoon/Downloads/seame.webp)
+![SEA:ME](/home/gihoon/Downloads/seame.webp)
 
 ## Team members
 |Name|Role|Github Handle|
