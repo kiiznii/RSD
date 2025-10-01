@@ -8,7 +8,7 @@
 |Gihoon Kim|LK developer| JoeyGihoon|
 |Kijin Baek|ACC developer| kiiznii|
 |Siwoo Lee||Siwoo248|
-|Changseok Oh||Changseok-Oh29|
+|Changseok Oh|Eclipse Tools Researcher|Changseok-Oh29|
 
 
 ---
