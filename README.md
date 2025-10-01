@@ -1,4 +1,4 @@
-# RSD - Ready Set Drive !
+# Team RSD - Ready Set Drive !
 
 
 ## Team members
