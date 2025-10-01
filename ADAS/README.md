@@ -4,11 +4,37 @@
 This project implements a **basic ADAS control stack** — Adaptive Cruise Control (ACC) and Lane Keeping (LK) — integrated with the **Eclipse SDV ecosystem**.  
 The goal is to create a working pipeline from **simulation (CARLA)** → **data broker (Kuksa with VSS)** → **communication (Zenoh)** → **control logic (ACC + LK)**.
 
-<p align="center">
-  <img src="docs/architecture.png" width="600"/>
-</p>
+```mermaid
+flowchart LR
+    subgraph ENV[ENV (CARLA Simulation)]
+        R[ Radar ]
+        C[ Camera ]
+    end
 
----
+    subgraph DECISION[Decision Layer]
+        D[ ACC + LK Decision ]
+    end
+
+    subgraph CONTROL[Control Layer]
+        CT[ Control Outputs ]
+    end
+
+    %% Radar → Kuksa → Decision
+    R -->|Sensor Data| KUKSA[(Kuksa Databroker)]
+    KUKSA -->|pub/sub| D
+
+    %% Camera → Zenoh → Decision
+    C -->|Image/Lane Data| ZENOH[(Zenoh Pub/Sub)]
+    ZENOH --> D
+
+    %% External Algo Inputs
+    ACC[ACC_algo.py] -->|params| D
+    LK[LK_algo.py] -->|params| D
+
+    %% Decision → Control → CARLA
+    D --> CT
+    CT -->|Throttle/Brake/Steering| CARLA[(CARLA Ego Vehicle)]
+
 
 ## ✨ Features
 - **ACC (Adaptive Cruise Control)**
