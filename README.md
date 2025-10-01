@@ -2,19 +2,23 @@
 
 
 ## Team members
-- Gihoon Kim
-- Kijin Baek
-- Changseok Oh
-- Younggyo Oh
-- Siwoo Lee
+|Name|Role|Github Handle|
+|----|----|----|
+|Younggyo Oh|Team Leader|oyg0323|
+|Gihoon Kim|LK developer| JoeyGihoon|
+|Kijin Baek|ACC developer| kiiznii|
+|Siwoo Lee||Siwoo248|
+|Changseok Oh||Changseok-Oh29|
+
 
 ---
-## Challenge : Virtual SDV Lab Challenge
+## Challenge
+Virtual SDV Lab Challenge
 
 ---
 ## Core Idea
 ### Problem Definition
-ADAS features such as ACC, AEB, and LKAS are becoming increasingly important for vehicle safety. However, their performance can vary depending on road surface condition such as wet, icy, snowy, or dry roads. We wanted to enhance ADAS safety and reliability by incorporating real-time road condition awareness into the system.
+ADAS features such as ACC, AEB, and LK are becoming increasingly important for vehicle safety. However, their performance can vary depending on road surface condition such as wet, icy, snowy, or dry roads. We wanted to enhance ADAS safety and reliability by incorporating real-time road condition awareness into the system.
 
 ### Rough Solution Idea
 Our approach is to develop a **Road Condition Recognition Layer** that estimates road surface condition and classifies road surface types using multi-sensor data (e.g. camera, radar, vehicle dynamics).
@@ -22,7 +26,7 @@ Our approach is to develop a **Road Condition Recognition Layer** that estimates
 These layers are then integrated with ADAS features to refine thier behavior:
 - **ACC(Adaptive Cruise Control)** : ACC automatically maintains a set speed chosen by the driver, while also adjusting the vehicle's speed to keep a safe distance from the car ahead. Changes mode(Cruise, Follow, AEB) depending on the distance between the obstacles ahead and TTC(Time to Collision).
 - **RCR(Road Condition Recognition)** : RCR detects the road surface condition using camera, IMU, odometer and applies additional distance, TTC on the ACC depending on the weather conditions.
-- **LKAS(Lane Keeping Assist System)** : LKAS prevents the vehicle from unintentionally departing its current lane by providing gentle steering corrections.
+- **LK(Lane Keeping)** : LK prevents the vehicle from unintentionally departing its current lane by providing gentle steering corrections.
 
 By integrating road condition recognition with ADAS, our system aims to achieve safer and more adaptive driving across diverse conditions.
 
