@@ -23,8 +23,8 @@ ADAS features such as ACC, AEB, and LKAS are becoming increasingly important for
 Our approach is to develop a **Road Condition Recognition Layer** that estimates road surface condition and classifies road surface types using multi-sensor data (e.g. camera, radar, vehicle dynamics).
 
 These layers are then integrated with ADAS features to refine thier behavior:
-- **ACC(Adaptive Cruise Control)** : ACC automatically maintains a set speed chosen by the driver, while also adjusting the vehicle's speed to keep a safe distance from the car ahead.
-- **AEB(Automatic Emergency Braking)** : AEB detects the risk of a collision with vehicles, pedestrains, or obstacles and automatically applies the brakes in unavoidable situations to prevent the accident.
+- **ACC(Adaptive Cruise Control)** : ACC automatically maintains a set speed chosen by the driver, while also adjusting the vehicle's speed to keep a safe distance from the car ahead. Changes mode(Cruise, Follow, AEB) depending on the distance between the obstacles ahead and TTC(Time to Collision).
+- **RCR(Road Condition Recognition)** : RCR detects the road surface condition using camera, IMU, odometer and applies additional distance, TTC on the ACC depending on the weather conditions.
 - **LKAS(Lane Keeping Assist System)** : LKAS prevents the vehicle from unintentionally departing its current lane by providing gentle steering corrections.
 
 By integrating road condition recognition with ADAS, our system aims to achieve safer and more adaptive driving across diverse conditions.
