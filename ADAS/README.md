@@ -1,4 +1,4 @@
-# Eclipse Hackathon RSD — ADAS Controller (ACC + LK)
+# ADAS Controller (ACC + LK)
 
 ## 🚗 Overview
 This project implements a **basic ADAS control stack** — Adaptive Cruise Control (ACC) and Lane Keeping (LK) — integrated with the **Eclipse SDV ecosystem**.  
