@@ -1,6 +1,6 @@
 # Team RSD - Ready Set Drive !
 <p align="center">
-  <img src="images/seame_oer_logo.jpeg" alt="SEA:ME" width="400"/>
+  <img src="images/seame_oer_logo.jpeg" alt="SEA:ME" width="200"/>
 </p>
 
 ## Team members
