@@ -1,5 +1,5 @@
 # Team RSD - Ready Set Drive !
-<img src="images/seame_oer_logo.jpeg" alt="SEA:ME" width="300" style="margin:0; padding:0;"/>
+<img src="images/seame_oer_logo.jpeg" alt="SEA:ME" width="300" height="200" style="margin:0; padding:0;"/>
 
 ## Team members
 |Name|Role|Github Handle|
