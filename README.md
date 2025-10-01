@@ -20,7 +20,7 @@
 ADAS features such as ACC, AEB, and LKAS are becoming increasingly important for vehicle safety. However, their performance can vary depending on road surface condition such as wet, icy, snowy, or dry roads. We wanted to enhance ADAS safety and reliability by incorporating real-time road condition awareness into the system.
 
 ### Rough Solution Idea
-Our approach is to develop a **Road Condition Prediction Layer** that estimates road surface condition and classifies road surface types using multi-sensor data (e.g. camera, radar, vehicle dynamics).
+Our approach is to develop a **Road Condition Recognition Layer** that estimates road surface condition and classifies road surface types using multi-sensor data (e.g. camera, radar, vehicle dynamics).
 
 These layers are then integrated with ADAS features to refine thier behavior:
 - **ACC(Adaptive Cruise Control)** : ACC automatically maintains a set speed chosen by the driver, while also adjusting the vehicle's speed to keep a safe distance from the car ahead.
