@@ -27,7 +27,7 @@ These layers are then integrated with ADAS features to refine thier behavior:
 - **AEB(Automatic Emergency Braking)** : AEB detects the risk of a collision with vehicles, pedestrains, or obstacles and automatically applies the brakes in unavoidable situations to prevent the accident.
 - **LKAS(Lane Keeping Assist System)** : LKAS prevents the vehicle from unintentionally departing its current lane by providing gentle steering corrections.
 
-By integrating road condition prediction with ADAS, our system aims to achieve safer and more adaptive driving across diverse conditions.
+By integrating road condition recognition with ADAS, our system aims to achieve safer and more adaptive driving across diverse conditions.
 
 ### System Architecture
 <img width="1602" height="755" alt="Screenshot from 2025-09-30 19-07-35" src="https://github.com/user-attachments/assets/e71f12de-2452-449a-a66c-08073fa596c1" />
