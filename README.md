@@ -1,5 +1,5 @@
 # Team RSD - Ready Set Drive !
-![SEA:ME](/home/gihoon/Downloads/seame.webp)
+![SEA:ME](/home/gihoon/Downloads/seame_oeg_logo.jpeg)
 
 ## Team members
 |Name|Role|Github Handle|
